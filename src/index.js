@@ -164,7 +164,7 @@ function spawnPiece() {
     endGame();
   }
 }
-
+// Check collision
 // Check collision
 function checkCollision(piece, x, y) {
   for (let row = 0; row < piece.length; row++) {
