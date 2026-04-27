@@ -30,7 +30,16 @@ const SHAPES = [
   [[8]], // Void block (black)
   [[8, 8]], // Void pair
 ];
+// បន្ថែម Level Counter
+let level = 1;
+const levelDisplay = document.getElementById('level');
 
+function updateLevel() {
+    level++;
+    if (levelDisplay) {
+        levelDisplay.innerText = `Level: ${level}`;
+    }
+}
 // Game state
 let canvas, ctx, patternCanvas, patternCtx;
 let board = [];
