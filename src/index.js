@@ -31,14 +31,11 @@ const SHAPES = [
   [[8, 8]], // Void pair
 ];
 // បន្ថែម Level Counter
-let level = 1;
-const levelDisplay = document.getElementById('level');
-
-function updateLevel() {
-    level++;
-    if (levelDisplay) {
-        levelDisplay.innerText = `Level: ${level}`;
-    }
+// បន្ថែមមុខងារ Level Counter
+let currentLevel = 1;
+function incrementLevel() {
+    currentLevel++;
+    console.log("Level updated to: " + currentLevel);
 }
 // Game state
 let canvas, ctx, patternCanvas, patternCtx;
